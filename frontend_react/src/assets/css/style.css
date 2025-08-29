@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body{
+    background-color: #212529;
+}
+.bg-light-dark{
+    background-color:#2B3035 ;
+}
+#root{
+    display:flex;
+    flex-direction: column;
+    min-height:100vh
+    
+}
+.container{
+    flex:1;
+}
+
+.navbar-brand.text-light {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;           /* Bigger size */
+  font-weight: 700;
+  color: #00cfff !important; /* Override Bootstrap light text */
+  letter-spacing: 2px;
+  text-decoration: underline;
+  top: -15px;  
+ 
+}
+/* --- Main Dropdown Container: The Core Style --- */
+.dropdown-menu.dropdown-menu-dark {
+    background-color: rgba(33, 37, 41, 0.75); /* Dark, but semi-transparent */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    backdrop-filter: blur(10px); /* The "glassmorphism" blur effect! */
+
+    border: 1px solid rgba(0, 207, 255, 0.5); /* Cyan border */
+    border-radius: 0.5rem; /* Softer corners */
+    box-shadow: 0 0 20px rgba(0, 207, 255, 0.2); /* Subtle cyan glow */
+    margin-top: 10px !important; /* A little space from the button */
+    padding: 0.75rem; /* More internal padding */
+    animation: fadeInDown 0.3s ease-in-out; /* Add a fade-in animation */
+}
+
+/* --- Menu Items: Styling the Links --- */
+.dropdown-menu.dropdown-menu-dark .dropdown-item {
+    color: #f8f9fa; /* Brighter text color */
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover */
+    position: relative; /* Needed for the hover effect */
+    border-left: 3px solid transparent; /* Placeholder for hover effect */
+}
+
+/* --- Creative Hover Effect --- */
+.dropdown-menu.dropdown-menu-dark .dropdown-item:hover,
+.dropdown-menu.dropdown-menu-dark .dropdown-item:focus {
+    color: #00cfff; /* Change text to cyan on hover */
+    background-color: rgba(0, 207, 255, 0.1); /* Faint cyan background */
+    transform: translateX(5px); /* Slightly move item to the right */
+    border-left: 3px solid #00cfff; /* Highlight with a left border */
+}
+
+/* --- Styling the Search Input --- */
+.dropdown-menu.dropdown-menu-dark .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.dropdown-menu.dropdown-menu-dark .form-control:focus {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border-bottom-color: #00cfff; /* Cyan border on focus */
+}
+
+.dropdown-menu.dropdown-menu-dark .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* --- Dropdown Open Animation --- */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Style for the Permanently Selected/Active Menu Item --- */
+.dropdown-menu.dropdown-menu-dark .dropdown-item.active {
+    color: #00cfff; /* Permanent cyan text */
+    background-color: rgba(0, 207, 255, 0.15); /* Slightly darker cyan background */
+    border-left: 3px solid #00cfff; /* Permanent left border */
+    transform: translateX(5px); /* Keep it shifted to the right */
+}
+
+/* Ensure the active item doesn't change when you hover over it */
+.dropdown-menu.dropdown-menu-dark .dropdown-item.active:hover {
+    color: #00cfff;
+    background-color: rgba(0, 207, 255, 0.15);
+}
+
