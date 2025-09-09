@@ -52,10 +52,20 @@ npm install
 ```bash
 npm run dev
 ```
-##✨ Learnings
-Gained hands-on experience with full-stack development
-Practiced integrating APIs with React frontend
-Learned to fetch live data dynamically and update UI in real-time
+## ✨ Learnings
+- Gained hands-on experience with **full-stack development**  
+- Practiced integrating **APIs with React frontend**  
+- Learned to fetch **live data dynamically** and update UI in real-time  
+- Improved understanding of **Django REST Framework and React workflows**  
+- Strengthened skills in **frontend-backend communication** and **data handling**  
+## 🙌 Acknowledgements
+This project is a personal learning milestone — built with **passion, persistence, and lots of debugging**! 😅  
+Special thanks to all the online tutorials, documentation, and communities that helped me understand **Django, React, and web scraping**.
+## 📝 License
+This project is for educational and demonstration purposes.
+## 🔗 GitHub
+[https://github.com/shethrishi09/CricBet](https://github.com/shethrishi09/CricBet)
+
 
 
 
