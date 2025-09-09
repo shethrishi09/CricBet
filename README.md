@@ -17,8 +17,8 @@ Check it out on GitHub: [https://github.com/shethrishi09/CricBet](https://github
 ---
 
 ## 📂 Project Structure
-- `backend-drf/` → Django REST Framework backend  
-- `frontend-react/` → React frontend  
+- `backend_drf/` → Django REST Framework backend  
+- `frontend_react/` → React frontend  
 - `scraper/` → Python script for fetching live scores and odds  
 
 ---
@@ -29,7 +29,7 @@ Check it out on GitHub: [https://github.com/shethrishi09/CricBet](https://github
 ### Backend
 1. Navigate to the backend folder:
 ```bash
-cd backend-drf
+cd backend_drf
 ```
 2.Install dependencies:
 ```bash
@@ -42,7 +42,7 @@ python manage.py runserver
 ### Frontend
 1.Navigate to the frontend folder:
 ```bash
-cd frontend-react
+cd frontend_react
 ```
 2. Install dependencies:
 ```bash
